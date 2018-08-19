@@ -21,7 +21,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-                <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+                <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" alt="log" height="30" width="41"></a>
 <div class="collapse navbar-collapse" id="Navbar">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item active"><a href="#" class="nav-link"><span class="fa fa-home fa-lg"></span>Home</a></li>
@@ -41,8 +41,15 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+
+                  <div class="col-sm-3 align-self-center">
+                <img src="img/logo.png" class="img-fluid" alt="logo">
+
                 </div>
+                <div class="col-sm-3 align-self-center">
+                  <a href="#reservation-form"><button type="button" class="btn btn-warning">Reserve Table</button></a>
+                </div>
+
             </div>
 
         </div>
@@ -72,13 +79,23 @@
 
 
         <div class="row row-content align-items-center">
-            <div class=" col-12 col-sm-4 col-md-3">
+            <div class="col-12 col-sm-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
+            <div class="col-xs-12 col-sm-9">
+              <div class="media">
+                      <div class="media-body">
+
+                <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+</div>
+              <div class="media-right">
+
+                  <img class="media-object img-thumbnail align-self-center"
+                          src="img/buffet.png" alt="buffet">
+                </div>
             </div>
+          </div>
         </div>
 
         <div class="row row-content align-items-center">
@@ -104,15 +121,17 @@
 
             </div>
         </div>
+        </div>
       <!-- reservation form -->
         <div class="row row-content justify-content-center">
           <div class="col-12 col-sm-8">
 
           <div class="card">
-          <h5 class="card-header bg-warning text-white">Reserve a Table</h5>
+          <h5 class="card-header bg-warning text-white" id="reservation-form">Reserve a Table</h5>
           <div class="card-body">
-          <form>
-            Number of Guests
+          <div class="form-group">
+            <label for="example-text-input" class="col-12 col-sm-3 col-form-label">  Number of Guests</label>
+
             <label class="radio-inline">
               <input type="radio" name="option" checked>1
             </label>
@@ -132,19 +151,26 @@
               <input type="radio" name="option">6
             </label>
             <br>
-            Date and time
+
+            </div>
+            <label for="example-text-input" class="col-12 col-sm-3 col-form-label">  Date and time</label>
+
             <input type="text" name="Date" value="Date">
             <input type="text" name="Time" value="Time">
             <br>
-            <input type="submit" value="reserve" class="bg-primary text-white">
 
-          </form>
-        </div>
+            <div class="offset-md-3 col-md-9">
+            <button type="submit" class="btn btn-primary pr-10">Reserve</button>
+            </div>
+                </div>
           </div>
         </div>
-        </div>
+          </div>
+
+
+
       <!-- reservation form -->
-    </div>
+
 
 
 
